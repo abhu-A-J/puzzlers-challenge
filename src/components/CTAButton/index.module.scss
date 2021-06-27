@@ -1,0 +1,36 @@
+.base {
+  display: inline-block;
+  font-size: 1.7rem;
+  font-weight: 500;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  color: #fff8ef !important;
+  max-width: max-content;
+}
+
+/* Types */
+.primary {
+  @extend .base;
+  background: #faa834;
+  &:hover {
+    background: #f59f27;
+  }
+}		
+
+.secondary {
+  @extend .base;
+  background: #004e4c;
+}
+
+/* Sizes */
+
+.sm {
+  min-height: 4rem;
+  min-width: 11.5rem;
+}
+
+.md {
+  height: 4.9rem;
+  min-width: 14.1rem;
+}

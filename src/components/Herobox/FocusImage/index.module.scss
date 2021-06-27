@@ -1,0 +1,100 @@
+$green: #004e4c;
+$orange: #fda622;
+
+.focusImage {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  @media only screen and(max-width:650px) {
+    flex-direction: column;
+  }
+}
+
+.locationPinOne {
+  margin-top: 10rem;
+  margin-right: 1.5rem;
+}
+
+.locationPinSecond {
+  margin-top: 25rem;
+  margin-left: 1.5rem;
+}
+
+.heroImage {
+  width: 41.6rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+
+  @media only screen and(max-width:1200px) {
+    flex-direction: column-reverse;
+    margin: 0 auto;
+  }
+
+  @media only screen and(max-width:650px) {
+    width: 100%;
+  }
+
+  &__image {
+    max-width: 100%;
+    border-radius: 2.4rem;
+  }
+
+  &__caption {
+    color: $green;
+    font-size: 1.7rem;
+    margin: 1.5rem 0;
+
+    span {
+      font-weight: 500;
+      display: block;
+    }
+
+    @media only screen and(max-width:1200px) {
+      margin-top: 0rem;
+    }
+  }
+}
+
+.floatingCardOne {
+  position: absolute;
+  top: 4rem;
+  right: 0;
+
+  @media only screen and(max-width:650px) {
+    position: static;
+    top: unset;
+    right: unset;
+    transform: translate(2rem, -5rem);
+    will-change: transform;
+  }
+}
+
+.floatingCardTwo {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  z-index: 10;
+
+  @media only screen and(max-width:650px) {
+    position: static;
+    left: unset;
+    align-self: flex-end;
+    transform: translate(-2rem, -5rem);
+  }
+}
+
+.floatingCardThree {
+  position: absolute;
+  bottom: 10rem;
+  right: -2rem;
+  z-index: 10;
+  @media only screen and(max-width:650px) {
+    position: static;
+    bottom: unset;
+    right: unset;
+    transform: translateY(0);
+  }
+}

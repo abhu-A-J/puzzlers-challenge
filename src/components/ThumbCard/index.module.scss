@@ -1,0 +1,33 @@
+$green: #004e4c;
+$beige: #fff8ef;
+
+.thumbCardWrapper {
+  background: $beige;
+  border-radius: 12px;
+  width: 14.6rem;
+  max-height: 20rem;
+  box-shadow: 0px 4px 10px rgba(#000, 0.5);
+  padding: 1rem;
+  backface-visibility: hidden;
+  z-index: 10;
+}
+
+.thumbImage {
+  width: 13rem;
+  img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+}
+
+.thumbDesc {
+  color: $green;
+  font-size: 1.3rem;
+  text-align: left;
+
+  span {
+    font-weight: 500;
+    display: block;
+    font-size: 1.7rem;
+  }
+}

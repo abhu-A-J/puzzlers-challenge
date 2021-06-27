@@ -1,0 +1,100 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden !important; // reset to 1rem=10px
+}
+
+body {
+  box-sizing: border-box;
+  line-height: 1.5;
+  background: #fff8ef;
+}
+
+$light: 300;
+$regular: 400;
+$bold: 500;
+
+/* Faible Light */
+@font-face {
+  font-family: 'Faible';
+  src: url('./assets/fonts/Faible/Faible-Light.woff2') format('woff2'),
+    url('./assets/fonts/Faible/Faible-Light.woff2') format('woff');
+  font-weight: $light;
+  font-style: normal;
+}
+
+/* Faible Regular */
+@font-face {
+  font-family: 'Faible';
+  src: url('./assets/fonts/Faible/Faible-Regular.woff2') format('woff2'),
+    url('./assets/fonts/Faible/Faible-Regular.woff') format('woff');
+  font-weight: $regular;
+  font-style: normal;
+}
+
+/* Faible Bold */
+@font-face {
+  font-family: 'Faible';
+  src: url('./assets/fonts/Faible/Faible-Bold.woff2') format('woff2'),
+    url('./assets/fonts/Faible/Faible-Bold.woff') format('woff');
+  font-weight: $bold;
+  font-style: normal;
+}
+
+/* Spoof Trial Light */
+@font-face {
+  font-family: 'Spoof Trial';
+  src: url('./assets/fonts/SpoofTrial/SpoofTrial-Light.otf') format('opentype');
+  font-weight: $light;
+  font-style: normal;
+}
+
+/* Spoof Trial Bold */
+@font-face {
+  font-family: 'Spoof Trial';
+  src: url('./assets/fonts/SpoofTrial/SpoofTrial-Bold.otf') format('opentype');
+  font-weight: $bold;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Spoof Trial';
+}
+
+p,
+ul,
+li,
+small,
+a {
+  font-family: 'Faible';
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+button,
+a {
+  &:focus {
+    outline: 1px solid rgba(#f59f27, 0.4);
+  }
+}
+
+ul,
+li {
+  list-style: none;
+}

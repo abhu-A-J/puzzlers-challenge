@@ -1,0 +1,43 @@
+$green: #004e4c;
+$beige: #fff8ef;
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+  z-index: 100;
+  background: $beige;
+}
+
+.brandLogo {
+  height: auto;
+  img {
+    max-width: 100%;
+  }
+}
+
+.navLinksWrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navLink {
+  margin-left: 2.5rem;
+  color: $green;
+
+  a {
+    font-size: 1.7rem;
+    color: inherit;
+    font-weight: 500;
+    font-family: 'Faible';
+    &:hover {
+      color: rgba($green, 0.8);
+    }
+  }
+}
+
+.navbarCTA {
+  margin-left: 2.5rem;
+}

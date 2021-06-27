@@ -1,0 +1,57 @@
+$green: #004e4c;
+$orange: #fda622;
+
+.herobox {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding-top: 5rem;
+
+  @media only screen and(max-width:1200px) {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+}
+
+.heroboxImages {
+  margin-left: 3rem;
+  z-index: 1;
+  position: relative;
+
+  @media only screen and(max-width:1400px) {
+    margin-left: 0;
+  }
+
+  @media only screen and(max-width:1200px) {
+    width: 100%;
+    margin-bottom: 10rem;
+  }
+}
+
+/* Hero Content Section */
+.heroboxContent {
+  flex: 0 0 50%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Decorations */
+.curveLineDesktop {
+  position: absolute;
+  bottom: -30%;
+  right: -30%;
+  z-index: -1;
+  @media only screen and(max-width:1400px) {
+    display: none;
+  }
+}
+
+.curveLineMobile {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
